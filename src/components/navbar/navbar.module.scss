@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    height: 123px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.menu{
+    display: flex;
+    gap:30px;
+
+    &_img{
+        margin-top: 27px;
+    }
+
+    &_info{
+        margin-top: 53px;
+        display: flex;
+        gap:45px;
+        font-size: 15px;
+    }
+}
+.perosonal{
+    display: flex;
+    margin-top:37px;
+}
