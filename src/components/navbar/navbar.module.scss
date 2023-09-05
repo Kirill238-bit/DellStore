@@ -1,8 +1,7 @@
 .wrapper{
     display: flex;
     height: 123px;
-    margin-left: 260px;
-    margin-right: 260px;
+    justify-content: space-around;
 }
 
 .menu{
@@ -18,9 +17,24 @@
         display: flex;
         gap:45px;
         font-size: 15px;
+        text-transform: uppercase;
+        line-height: 17.58px;
+
+        div{
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        div:hover{
+            color:rgb(25, 125, 158);
+        }
     }
 }
-.perosonal{
+.personal{
     display: flex;
-    margin-top:37px;
+    gap:30px;
+    margin-top:37px;  
+
+    div{
+        cursor: pointer;
+    }
 }
