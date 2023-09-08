@@ -53,17 +53,10 @@ export default function Footer(){
                         </div>
                         <div className={style.img}>
                             <Image
-                            src='/images/facebook.png'
+                            src='/images/contacts/soc.png'
                             alt='facebook'
-                            width={37.71}
-                            height={37.71}/>
-                        </div>
-                        <div className={style.img}>
-                            <Image
-                            src='/images/watsup.png'
-                            alt='facebook'
-                            width={37.71}
-                            height={37.71}/>
+                            width={94}
+                            height={38}/>
                         </div>
                 </div>
             </div>

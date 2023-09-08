@@ -1,0 +1,116 @@
+
+.wrapper{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),linear-gradient(0deg, #EEEEEE, #EEEEEE);
+    padding-bottom: 260px;
+    padding-top: 120px;
+}
+
+.content{
+    //margin:260px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts{
+    background:#fff;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0 120px 120px;
+
+    &_info{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    &_title{
+        color: #292D32;
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 400;
+    }
+
+    &_subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        color:#838383;
+        line-height: 24px;
+        margin-top: 15px;
+    }
+
+    .iphone{
+        position: absolute;
+        rotate: -10;
+        margin-left: 500px
+    }
+}
+
+.bid{
+    background: #292D32;
+    color:#fff;
+    padding: 120px;
+    width: 500px;
+
+    &_title{
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 400;
+    }
+
+    &_subtitle{
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    form{
+        margin-top: 50px;
+        color:#fff
+    }
+    p{
+        color:#F2F2F280;
+        opacity:50%;
+    }
+
+    &_normalinput{
+        width: 434px;
+        height: 72px;
+        background-color: #292D32;
+        border: 1.5px solid #F2F2F280;
+        opacity: 50%;
+        border-radius: 30px;
+    }
+
+    &_input{
+        width: 434px;
+        height: 145px;
+        background-color: #292D32;
+        border: 1.5px solid #F2F2F280;
+        opacity: 50%;
+        border-radius: 30px;
+    }
+}
+
+.button_wrapper{
+    margin-top: 50px;
+    display: flex;
+    gap:15px;
+    align-items: center;
+    .button{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #33A9FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color:#fff;
+    }
+}

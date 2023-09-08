@@ -1,5 +1,6 @@
 import Advantages from '@/components/advantages/advantages'
 import Catalog from '@/components/catalog/catalog'
+import Contacts from '@/components/contacts/contacts'
 import News from '@/components/news/news'
 import Slider from '@/components/slider/slider'
 import Image from 'next/image'
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div>
         <News/>
+      </div>
+      <div>
+        <Contacts/>
       </div>    
     </main>
   )
