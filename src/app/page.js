@@ -1,5 +1,6 @@
 import Advantages from '@/components/advantages/advantages'
 import Catalog from '@/components/catalog/catalog'
+import News from '@/components/news/news'
 import Slider from '@/components/slider/slider'
 import Image from 'next/image'
 import styles from './page.module.css'
@@ -15,6 +16,9 @@ export default function Home() {
       </div>
       <div>
         <Advantages/>
+      </div>
+      <div>
+        <News/>
       </div>    
     </main>
   )
