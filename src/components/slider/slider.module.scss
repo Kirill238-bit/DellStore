@@ -3,12 +3,14 @@
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
+
     &_slider{
         display: flex;
         overflow: hidden;
         width: 557px;
+
         div{
-        transition: all 0.5s;
+            transition: all 0.5s;
         }
     }
 
@@ -16,6 +18,7 @@
         width: 446px;
         margin-top: 263px;
         margin-left: 290px;
+
         &_title{
             font-size: 18px;
             font-weight: 300;
@@ -38,6 +41,7 @@
     display: flex;
     gap:15px;
     align-items: center;
+
     .button{
         width: 55px;
         height: 55px;
@@ -73,4 +77,48 @@
     width: 104.5px;
     height:21px;
     cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+        &_slider{
+            height: none;
+            width: 100%;
+            img{
+                width: 360px;
+            }
+        }
+
+        &_info{
+            margin-left: 15px;
+            margin-top: 100px;
+            width: 100%;
+
+            &_title{
+                font-size: 15px;
+            }
+
+            &_subtitle{
+                margin:0;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .button_next{
+        margin-left: 65%;
+        margin-top: 210%;
+        position: absolute;
+    }
+
+    .button_prev{
+        margin: 0;
+        position: absolute;
+        z-index: 11111;
+        margin-bottom: 50%;
+    }
 }

@@ -11,7 +11,7 @@ export default function Contacts(){
                             <div className={style.contacts_title}>Наши контакты</div>
                             <div className={style.contacts_subtitle}>Вы можете связаться с нашим онлайн консультантом</div>
                         </div>
-                        <div>
+                        <div className={style.cont}>
                             <Image
                             src='/images/contacts/cont.png'
                             alt='cont'

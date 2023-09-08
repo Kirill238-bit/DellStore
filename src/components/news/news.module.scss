@@ -59,3 +59,41 @@
         color:#292D32;
     }
 }
+
+
+@media (max-width:768px) {
+    .wrapper{
+        width: 100%;
+        margin: 0 !important;
+    } 
+
+    .content{
+        margin: 0 !important;
+
+        &_news{
+            margin: 0 !important;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+    .title_first{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &_main{
+            font-size: 30px;
+        }
+    }
+    .title_two{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .item{
+        img{
+            width: 100%;
+            height: 300px;
+        }
+    }
+}

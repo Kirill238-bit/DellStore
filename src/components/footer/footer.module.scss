@@ -55,3 +55,25 @@
         line-height: 27px;
     }
 }
+
+@media (max-width:768px) {
+    
+    .wrapper{
+        height: none;
+        margin:15px;
+    }
+
+    .main{
+        flex-direction: column;
+
+        &_info{
+            gap:15px;
+            flex-wrap: wrap;
+        }
+
+        &_adress{
+            flex-direction: column;
+            gap:15px;
+        }
+    }
+}

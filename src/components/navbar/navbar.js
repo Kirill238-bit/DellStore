@@ -13,11 +13,11 @@ export default function Navbar() {
                     height={70}/>
                 </div>
                 <div className={style.menu_info}>
-                    <div>главная</div>
-                    <div>каталог</div>
-                    <div>новости</div>
-                    <div>наши асц</div>
-                    <div>контакты</div>
+                    <div className={style.none}>главная</div>
+                    <div className={style.none}>каталог</div>
+                    <div className={style.none}>новости</div>
+                    <div className={style.none}>наши асц</div>
+                    <div className={style.none}>контакты</div>
                     <div>
                         <Image
                         src='/images/search.png'
@@ -35,14 +35,14 @@ export default function Navbar() {
                     width={49}
                     height={49}/>
                 </div>
-                <div>
+                <div className={style.none}>
                     <Image
                     src='/images/stairs.png'
                     alt='menu'
                     width={49}
                     height={49}/>
                 </div>
-                <div>
+                <div className={style.none}>
                     <Image
                     src='/images/heart.png'
                     alt='menu'
@@ -55,6 +55,13 @@ export default function Navbar() {
                     alt='menu'
                     width={49}
                     height={49}/>
+                </div>
+                <div className={style.menu_icon}>
+                    <Image
+                    src='/images/menu.png'
+                    alt='menu'
+                    width={48}
+                    height={48}/>
                 </div>
             </div>
         </div>
