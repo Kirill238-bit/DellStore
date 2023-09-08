@@ -1,7 +1,28 @@
+'use client'
 import Image from 'next/image'
+import { useState } from 'react'
 import style from './contacts.module.scss'
 
 export default function Contacts(){
+    const [name,setName]=useState();
+    const [tele, setTele]=useState();
+    const [kom, setKom]=useState();
+
+    function Submit(){
+        
+        if(name===undefined){
+            alert('Заполните имя!')
+        }
+        if(tele===undefined){
+            alert('Заполните телефон!')
+        }
+        if(kom===undefined){
+            alert('Заполните комментарий!')
+        }
+        else{
+            alert('Спасибо за заявку');
+        }
+    }
     return(
         <div className={style.wrapper}>
             <div className={style.content}>
@@ -42,14 +63,14 @@ export default function Contacts(){
                         </div>
                         <form>
                             <p>Ваше имя</p>
-                            <input className={style.bid_normalinput} type='text'/>
+                            <input className={style.bid_normalinput} type='text' onChange={e=>setName(e.target.value)}/>
                             <p>Номер телефона</p>
-                            <input className={style.bid_normalinput} type='text'/>
+                            <input className={style.bid_normalinput} type='text' onChange={e=>setTele(e.target.value)}/>
                             <p>Комментарий</p>
-                            <input className={style.bid_input} type='text'/>
+                            <input className={style.bid_input} type='text' onChange={e=>setKom(e.target.value)}/>
                             <br/>
                             <div className={style.button_wrapper}>
-                                <div className={style.button}>
+                                <div className={style.button} onClick={Submit}>
                                     <Image 
                                     src='/images/slider/arrow_button.png'
                                     alt='arrow'
