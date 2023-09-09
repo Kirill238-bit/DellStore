@@ -43,11 +43,24 @@
     display: none;
 }
 
+.person{
+    .menuModal{
+        display: none;
+    }
+}
 
+.person:hover{
+
+    .menuModal{
+        display: block;
+        position: absolute;
+        z-index: 1111111;
+        margin-top: 30px;
+    }
+}
 @media (max-width:768px) {
     .wrapper{
         width:none;
-        //justify-content: flex-start;
         height: none;
     }
 

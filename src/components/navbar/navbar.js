@@ -2,11 +2,11 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import Burger from '../burger/burger';
+import MenuModal from '../menuModal/menuModal';
 import style from './navbar.module.scss'
 
 export default function Navbar() {
     const [burgerActive,setBurgerActive]=useState(false);
-
     return (
         <div className={style.wrapper}>
             <div className={style.menu}>
@@ -33,12 +33,15 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={style.personal}>
-                <div>
+                <div className={style.person}>
                     <Image
                     src='/images/person.png'
                     alt='menu'
                     width={49}
                     height={49}/>
+                    <div className={style.menuModal}>
+                        <MenuModal/>
+                    </div>
                 </div>
                 <div className={style.none}>
                     <Image
