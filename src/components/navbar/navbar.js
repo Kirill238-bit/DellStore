@@ -1,7 +1,12 @@
+'use client'
 import Image from 'next/image'
+import { useState } from 'react'
+import Burger from '../burger/burger';
 import style from './navbar.module.scss'
 
 export default function Navbar() {
+    const [burgerActive,setBurgerActive]=useState(false);
+
     return (
         <div className={style.wrapper}>
             <div className={style.menu}>
@@ -56,14 +61,23 @@ export default function Navbar() {
                     width={49}
                     height={49}/>
                 </div>
-                <div className={style.menu_icon}>
+                <div className={style.menu_icon} onClick={()=>setBurgerActive(!burgerActive)} >
+                    {burgerActive===false?
                     <Image
                     src='/images/menu.png'
                     alt='menu'
                     width={48}
                     height={48}/>
+                    :
+                    <Image
+                    src='/images/x.png'
+                    alt='menu'
+                    width={48}
+                    height={48}/>
+                    }
                 </div>
             </div>
+            <Burger active={burgerActive}/>
         </div>
     )
 }
