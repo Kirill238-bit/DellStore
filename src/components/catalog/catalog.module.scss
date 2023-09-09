@@ -37,6 +37,7 @@
     display: flex;
     gap:15px;
     align-items: center;
+
     .button{
         width: 55px;
         height: 55px;
@@ -64,10 +65,12 @@
     &_content{
         margin: 30px;
     }
+
     &_img{
         display: flex;
         justify-content: flex-end;
     }
+
     &_number{
         width: 28px;
         height: 38px;
@@ -93,6 +96,7 @@
 }
 
 @media (max-width:768px) {
+    
     .content{
         margin: 0;
     }

@@ -17,11 +17,11 @@ export default function Advantages(){
                     <div className={style.subtitle}>Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</div>
                     <div className={style.button_wrapper}>
                         <div className={style.button}>                       
-                         <Image 
-                        src='/images/slider/arrow_button.png'
-                        alt='arrow'
-                        width={12}
-                        height={12}/>
+                            <Image 
+                            src='/images/slider/arrow_button.png'
+                            alt='arrow'
+                            width={12}
+                            height={12}/>
                         </div>
                         <div className={style.text}>Оставить заявку</div>
                     </div>
